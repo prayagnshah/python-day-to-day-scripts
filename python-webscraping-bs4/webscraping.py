@@ -15,12 +15,7 @@ movies = []  ## Adding movies into the empty list
 table = soup.find('div', attrs = {'data-id':'movies_at_home_sort:popular'})
 
 for row in table:
-    movie = {}
-    
-    movie['img'] = row.img['src']
-    movies.append(movie)
-    
-print(movies)
+    print(row)
     
 
 # print(soup.prettify())
